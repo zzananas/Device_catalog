@@ -7,7 +7,7 @@
   font-family: "Gilroy";
   src: url("fonts/Gilroyextrabold.ttf");
 }
-body {
+body, html{
   /* letter-spacing: 0.7px; */
   /* width: 100%;
   height: 2795px;
@@ -15,6 +15,7 @@ body {
   /* width: 1440px;
   margin: 0 auto; */
   font-family: "Open Sans", "Arial", Verdana, sans-serif;
+  width: 100%;
 }
 .container {
   width: 1160px;
@@ -22,6 +23,21 @@ body {
   position: relative;
   /* margin-left: auto;
   margin-right: auto; */
+}
+.container.no-margin {
+  margin: 0;
+}
+
+@media only screen and (max-width: 1200px) {
+  .container {
+   width: 900px;   
+  }
+  .filter_background, .form {
+    width: calc((100% - 900px)/2 + 338px);
+  }
+  .form {
+    min-height: 2188px;
+  }
 }
 /*HEADER*/
 .device_logo {
@@ -129,6 +145,7 @@ body {
    justify-content: space-between;
    align-items: baseline;
    width: 230px;
+   cursor: pointer;
  }
  .choose {
    display: flex;
@@ -370,6 +387,13 @@ a:active {
   flex-direction: row;
   align-items: center;
 }
+/* .footer_background {
+  background-color: #464646;
+  width: 100%;
+  height: 430px;
+  position: absolute;
+  margin-top: -85px;
+} */
 .device_logo_footer {
   color: #ffc600;
   font-size: 45px;
@@ -463,6 +487,7 @@ a:active {
   flex-direction: column;
   justify-content: space-between;
   height: 205px;
+  width: 100%;
 }
 .down_stroke_footer2 {
   display: flex;
@@ -520,13 +545,14 @@ logo__html:active {
     align-items: flex-start;
     background-color: #efefef;
     position: absolute;
-    /* z-index: 0; */
     height: 325px;
-    /* margin-top: 85px; */
-    width: 468px;
-    height: 1209px;
+    height: 1198px;
+    min-width: 338px;
+    z-index: 4;
   }
 .form__nav {
+    position: absolute;
+    right: 80px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -559,11 +585,17 @@ logo__html:active {
   margin: 0 auto;
   align-items: center;
   height: 70px;
+  position: absolute;
 }
 .content_nav_sort {
   display: flex;
   justify-content: space-between;
-  width: 500px;
+  width: 640px;
+}
+.content_nav_sort_wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 760px;
 }
 .nav__sort {
   display: flex;
@@ -573,6 +605,7 @@ logo__html:active {
   font-family: "Gilroy";
   font-size: 12px;
   cursor: pointer;
+  margin-right: 200px;
 }
 .sort_title, .filter_title  {
   font-family: "Gilroy";
@@ -581,14 +614,21 @@ logo__html:active {
   text-transform: uppercase;
 }
 .filter_title  {
-  width: 267px;
+  width: 200px;
+  position: relative;
+  right: -60px;
+
+  /* width: 200px; */
+  /* background: red; */
+  /* margin-left: auto; */
 }
-.container__content {
+/* .container__content {
+  width: 740px;
   display: flex;
   justify-content: space-between;
   width: 1040px;
   margin: 0 auto;
-}
+} */
 .form__filter__color {
   display: flex;
   flex-direction: column;
@@ -606,29 +646,38 @@ logo__html:active {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 760px;
-  height: 1071px;
+  align-items: flex-end;
+  /* width: 100%; */
+  /* height: 1071px; */
   /* background: red; */
-  margin:69px 0;
-  margin-right: -60px;
+  padding:69px 0;
+  /* width: calc(100% - 200px); */
+  margin-left: 280px;
+  /* margin-right: -60px; */
 }
-.content_picture_up ,.content_picture_down {
+/* .content_picture > * > * {
+  margin-right: 20px;
+} */
+.content_picture_up {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
-  height: 379px;
-  /* background: green; */
+  margin-left: 120px;
 }
 .content_picture_pages {
   display: flex;
   align-items: center;
   height: 70px;
   background: #efefef;
+  margin-left: 37%;
+  width: 760px;
 }
 .picture_wrap {
  height: 450px;
  display: flex;
  flex-direction: column;
  justify-content: space-between;
+ margin-bottom: 45px;
 }
 .description_picture{
   display: flex;
@@ -670,6 +719,7 @@ logo__html:active {
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
+  background: #efefef;
 }
 .page {
   font-family: "Gilroy";
@@ -678,10 +728,13 @@ logo__html:active {
   /* font-size: 16px; */
 }
 .filter_background {
-  width: 468px;
+  min-width: 338px;
   background: #dbdbdb;
   position: absolute;
   height: 70px;
+}
+.filter_background, .form {
+  width: calc((100% - 1160px)/2 + 338px);
 }
 .sort_empty_field {
   height: 71px;
@@ -708,7 +761,7 @@ logo__html:active {
 }
 .button_sort {
   cursor: pointer;
-  margin-right: -60px;
+  margin-right: -120px;
 }
 .button_sort>* {
   opacity: 0.3;
@@ -730,6 +783,12 @@ logo__html:active {
 }
 .breadcrumds__ul_name, .user_name_quit {
   opacity: 0.3;
+}
+.user_name_quit:hover {
+  opacity: 0.6;
+}
+.user_name_quit:active {
+  opacity: 1;
 }
 .nav__sort>*{
   opacity: 0.3;

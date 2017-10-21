@@ -30,9 +30,9 @@
             </div>
           <div class="container_header_right">
             <div class="upper_stroke">
-            <a class="user_block header_links" href="#" id="open_modal">
+            <div class="user_block" id="open_modal">
               <img class="user_block_icon" src="img/user.png" alt="login" height="12"><span class="user_name">Валентин Петухов</span> <span class="user_name_quit">Выйти</span>
-              </a>
+            </div>
             <div class="choose_basket">
             <a class="choose header_links" href="#">
               <img class="choose_icon" src="img/compare.png" alt="choose" height="10">
@@ -98,77 +98,81 @@
 
       
     
-   
+      
     <div class="content_nav">
       <div class="filter_background"></div>
       <div class="container">
         <div class="content_nav_container">
           <div class="filter_title">Фильтры:</div>
 
-          
+            <!-- <div class="content_nav_sort_wrapper"> -->
             <div class="content_nav_sort">             
               <div class="sort_title">Сортировка:</div>
                 <div class="nav__sort">
                   <div class="sort_price">По цене</div>
                   <div class="sort_type">По типу</div>
                   <div class="sort_popular">По популярности</div>
-                </div>               
+                </div> 
+                <div class="button_sort">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="11" height="10" viewBox="0 0 11 10">
+                      <image id="icon-up-dir_копия_3" data-name="icon-up-dir копия 3" width="11" height="10" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAKCAMAAABVLlSxAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAASFBMVEUAAAAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAAAABXDQ+hAAAAFnRSTlMAAqJgXwnk43p5FfEUkyX7+q2sOzrFtApLfAAAAAFiS0dEAIgFHUgAAAAJcEhZcwAACxIAAAsSAdLdfvwAAABASURBVAjXPcbHAYAgEATARcVEMLL9l8oRjnkNIMxkoGYuWrtys/07yaP1dHLn6wOLUBqv+jvKHzYv8FH9SOMpA7gKBNtW/UZFAAAAAElFTkSuQmCC"/>
+                    </svg>
+                    
+                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="11" height="10" viewBox="0 0 11 10">
+                        <image id="icon-down-dir" width="11" height="10" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAKCAMAAABVLlSxAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAASFBMVEUAAAAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAAAABXDQ+hAAAAFnRSTlMAxTs6rawl+/qTFfEUenkJ5ONgXwKiB2ZxmwAAAAFiS0dEAIgFHUgAAAAJcEhZcwAACxIAAAsSAdLdfvwAAABCSURBVAjXPcZJAoAgDMDA4IIiKi7Y/z/VUsFcMjhpObrfPQyVI+An4+zVBHMoZInKuJrZ1PtH0iFnquaSu5H85LIXZG8E2GY++EcAAAAASUVORK5CYII="/>
+                      </svg>               
+                  </div>              
             </div>
 
-            <div class="button_sort">
-              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="11" height="10" viewBox="0 0 11 10">
-                <image id="icon-up-dir_копия_3" data-name="icon-up-dir копия 3" width="11" height="10" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAKCAMAAABVLlSxAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAASFBMVEUAAAAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAAAABXDQ+hAAAAFnRSTlMAAqJgXwnk43p5FfEUkyX7+q2sOzrFtApLfAAAAAFiS0dEAIgFHUgAAAAJcEhZcwAACxIAAAsSAdLdfvwAAABASURBVAjXPcbHAYAgEATARcVEMLL9l8oRjnkNIMxkoGYuWrtys/07yaP1dHLn6wOLUBqv+jvKHzYv8FH9SOMpA7gKBNtW/UZFAAAAAElFTkSuQmCC"/>
-              </svg>
-              
-                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="11" height="10" viewBox="0 0 11 10">
-                  <image id="icon-down-dir" width="11" height="10" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAKCAMAAABVLlSxAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAASFBMVEUAAAAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAjHyAAAABXDQ+hAAAAFnRSTlMAxTs6rawl+/qTFfEUenkJ5ONgXwKiB2ZxmwAAAAFiS0dEAIgFHUgAAAAJcEhZcwAACxIAAAsSAdLdfvwAAABCSURBVAjXPcZJAoAgDMDA4IIiKi7Y/z/VUsFcMjhpObrfPQyVI+An4+zVBHMoZInKuJrZ1PtH0iFnquaSu5H85LIXZG8E2GY++EcAAAAASUVORK5CYII="/>
-                </svg>               
-            </div>
-        </div>
+            
+        <!-- </div> -->
       </div>
     </div>
+  </div>
 
 
-
-     <div class="form"></div>
-    <div class="container">
-      <div class="container__content">
-      <div class="form__nav">
-        <div class="sort_empty_field"></div>
-        <div class="form__filter" height="165"><span>Стоимость</span>
-          <!-- <input   type="range" min="0" max="100" step="1" value="30"> -->
+     <div class="form"> 
+        <div class="form__nav">
+            <div class="sort_empty_field"></div>
+            <div class="form__filter" height="165"><span>Стоимость</span>
+              <!-- <input   type="range" min="0" max="100" step="1" value="30"> -->
+                  
+                <div id="slider-range"><input type="range" id="amount"></div>
+            </div>
+             
+            <div class="form__filter__color" height="285"><span class="span_color">Цвет</span>
+              <div class="filter_checkbox_list">
+                <input type="checkbox" id="color_black" >
+                  <label for="color_black">Чёрный</label>
+                <input type="checkbox" id="color_white" >
+                  <label for="color_white">Белый</label>
+                <input type="checkbox" id="color_blue" >
+                  <label for="color_blue">Синий</label>
+                <input type="checkbox" id="color_red" >
+                  <label for="color_red">Красный</label>
+                <input type="checkbox" id="color_pink" >
+                  <label for="color_pink">Розовый</label> 
               
-            <div id="slider-range"><input type="range" id="amount"></div>
-        </div>
-         
-        <div class="form__filter__color" height="285"><span class="span_color">Цвет</span>
-          <div class="filter_checkbox_list">
-            <input type="checkbox" id="color_black" >
-              <label for="color_black">Чёрный</label>
-            <input type="checkbox" id="color_white" >
-              <label for="color_white">Белый</label>
-            <input type="checkbox" id="color_blue" >
-              <label for="color_blue">Синий</label>
-            <input type="checkbox" id="color_red" >
-              <label for="color_red">Красный</label>
-            <input type="checkbox" id="color_pink" >
-              <label for="color_pink">Розовый</label> 
-          
-          </div>
-        </div>
-          <div class="form__filter" height="132"><span>Bluetooth</span>
-            <div class="bluetooth_checkbox">
-             <input type="radio" name="bluetooth" value="yes" id="bluetooth_yes"><label for="bluetooth_yes">Есть</label>
-             <input type="radio" name="bluetooth" value="no" id="bluetooth_no"><label for="bluetooth_no">Нет</label>
+              </div>
             </div>
-          </div>
-        
-        <a href="#" class="wrap_btn_3">
-            <div class="button_backgr">
-                  <span class="span_slider3">ПОКАЗАТЬ</span>
-            </div>
-        </a>
+              <div class="form__filter" height="132"><span>Bluetooth</span>
+                <div class="bluetooth_checkbox">
+                 <input type="radio" name="bluetooth" value="yes" id="bluetooth_yes"><label for="bluetooth_yes">Есть</label>
+                 <input type="radio" name="bluetooth" value="no" id="bluetooth_no"><label for="bluetooth_no">Нет</label>
+                </div>
+              </div>
+            
+            <a href="#" class="wrap_btn_3">
+                <div class="button_backgr">
+                      <span class="span_slider3">ПОКАЗАТЬ</span>
+                </div>
+            </a>
+        </div>
+     
     </div>
+    <div class="container">
+      <!-- <div class="container__content"> -->
+          
     <div class="content_picture">
       <div class="content_picture_up">
         <div class="picture_wrap">
@@ -214,9 +218,59 @@
               <span class="price_description">1500 руб.</span>
             </div>
         </div>
-      </div>
-      <div class="content_picture_down">
         <div class="picture_wrap">
+            <div class="picture"><img src="img/item-3.jpg.png" class="container__img"></div>
+            <div class="picture_mouseover">
+                <div class="picture__img"><img src="img/item-3.jpg.png" class="container__img_opacity">    
+                  <div class="picture__hover">
+                    <a href="#" class="wrap_btn">
+                      <div class="button_backgr">
+                            <span class="span_slider3">В КОРЗИНУ</span>
+                      </div>
+                    </a>
+                    <span class="button_description">Добавить к сравнению</span>
+                  </div>
+                </div>
+              </div>
+            <div class="description_picture">
+                <span class="span_description">Непотопляемая селфи-палка</span>
+                <span class="price_description">2500 руб.</span>
+              </div>
+          </div>
+          <div class="picture_wrap">
+              <div class="picture"><img src="img/item-4.jpg.png" class="container__img"></div><span class="span_new">NEW</span>
+              <div class="picture_mouseover">
+                  <div class="picture__img"><img src="img/item-4.jpg.png" class="container__img_opacity">    
+                    <div class="picture__hover">
+                      <a href="#" class="wrap_btn">
+                        <div class="button_backgr">
+                              <span class="span_slider3">В КОРЗИНУ</span>
+                        </div>
+                      </a>
+                      <span class="button_description">Добавить к сравнению</span>
+                    </div>
+                  </div>
+                </div>
+              <div class="description_picture">
+                  <span class="span_description">Селфи-палка<br> "Следуй за мной"</span>
+                  <span class="price_description">4500 руб.</span>
+                </div>
+            </div>
+            <div class="pages_container">
+                <div class="background_page"><span class="page">Назад</span></div>
+                  <div class="page_number">
+                    <span>1</span>
+                    <span>2</span>
+                    <span>3</span>
+                  </div>
+                  <div class="background_page"><span class="page">Вперёд</span></div>  
+              </div>
+      </div>
+
+
+
+      <!-- <div class="content_picture_up"> -->
+        <!-- <div class="picture_wrap">
           <div class="picture"><img src="img/item-3.jpg.png" class="container__img"></div>
           <div class="picture_mouseover">
               <div class="picture__img"><img src="img/item-3.jpg.png" class="container__img_opacity">    
@@ -234,8 +288,8 @@
               <span class="span_description">Непотопляемая селфи-палка</span>
               <span class="price_description">2500 руб.</span>
             </div>
-        </div>
-        <div class="picture_wrap">
+        </div> -->
+        <!-- <div class="picture_wrap">
           <div class="picture"><img src="img/item-4.jpg.png" class="container__img"></div><span class="span_new">NEW</span>
           <div class="picture_mouseover">
               <div class="picture__img"><img src="img/item-4.jpg.png" class="container__img_opacity">    
@@ -253,10 +307,10 @@
               <span class="span_description">Селфи-палка<br> "Следуй за мной"</span>
               <span class="price_description">4500 руб.</span>
             </div>
-        </div>
-      </div>
-      <div class="content_picture_pages">
-        <div class="pages_container">
+        </div> -->
+      <!-- </div> -->
+      <!-- <div class="content_picture_pages"> -->
+        <!-- <div class="pages_container">
           <div class="background_page"><span class="page">Назад</span></div>
             <div class="page_number">
               <span>1</span>
@@ -264,16 +318,17 @@
               <span>3</span>
             </div>
             <div class="background_page"><span class="page">Вперёд</span></div>  
-        </div>
-      </div>
+        </div> -->
+      <!-- </div> -->
     </div>
-  </div>
+  <!-- </div> -->
   </div>
 
          
 
       
         <footer class="main_footer">
+          <div class="footer_background"></div>
           <div class="container">
             <div class="footer__container__block">
             <div class="footer__container">
