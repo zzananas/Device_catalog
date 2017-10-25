@@ -673,11 +673,12 @@ logo__html:active {
   width: 760px;
 }
 .picture_wrap {
- height: 450px;
- display: flex;
- flex-direction: column;
- justify-content: space-between;
- margin-bottom: 45px;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 45px;
+  position: relative;
 }
 .description_picture{
   display: flex;
@@ -700,7 +701,7 @@ logo__html:active {
   border-radius: 100%;
   border: 2px solid #bfbfbf;
   right: 30px;
-  top: 590px;
+  top: 10px;
 }
 .page_number {
   width: 90px;
